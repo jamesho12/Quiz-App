@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="A quiz about Flexbox made with HTML, CSS, and JavaScript.">
+    <link href="https://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet" type="text/css">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <title>Flexbox Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="stats">
+        <li id="question-count" class="hidden">
+          Question: <span id="question-number">1</span>/10
+        </li>
+        <li id="title">
+          <header role="banner">Flexbox Quiz</header>
+        </li>
+        <li id="score-count" class="hidden">
+          Score: <span id="score">0/0</span>
+        </li>
+      </ul>
+    </div>
+    
+    <div id="start-content" class="content">
+      <h1>Welcome to the Flexbox Quiz</h1>
+      <div>
+        <h2>How well do you know Flexbox?</h2>
+        <h3>(Please visit <a href="http://flexboxfroggy.com/" target="_blank">here</a> if you are unfamiliar with CSS Flexbox)</h3>
+      </div>
+      <button id="start-button" type="submit">Begin</button>  
+    </div>
+    
+    <div id="question-content" class="content hidden">
+      <h2 id="question">Which flexbox property aligns items horizontally?</h2>
+      <form id="question-form">
+        <div class="answer-wrapper">
+          <label id="answer1">
+            <input name="answer" type="radio" required>
+            justify-content
+          </label>  
+          <label id="answer2">
+            <input name="answer" type="radio" required>
+            align-items
+          </label>  
+          <label class="col-6" id="answer3">
+            <input name="answer" type="radio" required>
+            align-content
+          </label>
+          <label class="col-6" id="answer4">
+            <input name="answer" type="radio" required>
+            flex-direction
+          </label>
+        </div>
+        <button id="submit-button" type="submit">Submit</button>  
+      </form>
+    </div>
+    
+    <div role="dialog" aria-labelledby="dialog1Title" id="feedback-content" class="modal-wrapper hidden">
+      <div class="modal">
+        <h4 class="feedback-text"></h4>
+        <button id="feedback-button" class="feedback-button" type="button">Next</button>
+      </div>
+    </div>
+    
+    <div id="results-content" class="content hidden">
+      <h1>Flexbox Quiz Results</h1>
+      <h2 id="results-text"></h2>
+      <button id="restart-button" type="submit">Restart</button>  
+    </div>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
