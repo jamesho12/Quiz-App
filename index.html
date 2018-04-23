@@ -24,54 +24,56 @@
         </li>
       </ul>
     </div>
-    
-    <div id="start-content" class="content">
-      <h1>Welcome to the Flexbox Quiz</h1>
-      <div>
-        <h2>How well do you know Flexbox?</h2>
-        <h3>(Please visit <a href="http://flexboxfroggy.com/" target="_blank">here</a> if you are unfamiliar with CSS Flexbox)</h3>
-      </div>
-      <button id="start-button" type="submit">Begin</button>  
-    </div>
-    
-    <div id="question-content" class="content hidden">
-      <h2 id="question">Which flexbox property aligns items horizontally?</h2>
-      <form id="question-form">
-        <div class="answer-wrapper">
-          <label id="answer1">
-            <input name="answer" type="radio" required>
-            justify-content
-          </label>  
-          <label id="answer2">
-            <input name="answer" type="radio" required>
-            align-items
-          </label>  
-          <label class="col-6" id="answer3">
-            <input name="answer" type="radio" required>
-            align-content
-          </label>
-          <label class="col-6" id="answer4">
-            <input name="answer" type="radio" required>
-            flex-direction
-          </label>
+
+    <main role="main">
+      <div id="start-content" class="content">
+        <h1>Welcome to the Flexbox Quiz</h1>
+        <div>
+          <h2>How well do you know Flexbox?</h2>
+          <h3>(Please visit <a href="http://flexboxfroggy.com/" target="_blank">here</a> if you are unfamiliar with CSS Flexbox)</h3>
         </div>
-        <button id="submit-button" type="submit">Submit</button>  
-      </form>
-    </div>
-    
-    <div role="dialog" aria-labelledby="dialog1Title" id="feedback-content" class="modal-wrapper hidden">
-      <div class="modal">
-        <h4 class="feedback-text"></h4>
-        <button id="feedback-button" class="feedback-button" type="button">Next</button>
+        <button id="start-button" type="submit">Begin</button>
       </div>
-    </div>
-    
-    <div id="results-content" class="content hidden">
-      <h1>Flexbox Quiz Results</h1>
-      <h2 id="results-text"></h2>
-      <button id="restart-button" type="submit">Restart</button>  
-    </div>
-    
+
+      <div id="question-content" class="content hidden">
+        <h2 id="question">Which flexbox property aligns items horizontally?</h2>
+        <form id="question-form">
+          <div class="answer-wrapper">
+            <label id="answer1">
+              <input name="answer" type="radio" required>
+              justify-content
+            </label>
+            <label id="answer2">
+              <input name="answer" type="radio" required>
+              align-items
+            </label>
+            <label class="col-6" id="answer3">
+              <input name="answer" type="radio" required>
+              align-content
+            </label>
+            <label class="col-6" id="answer4">
+              <input name="answer" type="radio" required>
+              flex-direction
+            </label>
+          </div>
+          <button id="submit-button" type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div role="dialog" aria-labelledby="dialog1Title" id="feedback-content" class="modal-wrapper hidden">
+        <div class="modal">
+          <h4 class="feedback-text"></h4>
+          <button id="feedback-button" class="feedback-button" type="button">Next</button>
+        </div>
+      </div>
+
+      <div id="results-content" class="content hidden">
+        <h1>Flexbox Quiz Results</h1>
+        <h2 id="results-text"></h2>
+        <button id="restart-button" type="submit">Restart</button>
+      </div>
+    </main>
+
     <script src="index.js"></script>
   </body>
 </html>
